@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sugestão de Presente | 42 Anos</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --verde: #00008e;
+  --verde-claro: #0e003f;
+  --dourado: #c9940f;
+  --fundo: #020b2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fundo);
+  font-family: 'Poppins', sans-serif;
+  color: #d7feff;
+}
+
+/* VIDEO TOPO */
+.topo-video {
+    width: 100%;
+    min-height: 650px;
+    padding: 45px 20px;
+    background: linear-gradient(
+        135deg,
+        #020b2d,
+        #10265b,
+        #03091f
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagem-convite {
+    width: 95%;
+    max-width: 1150px;
+    position: relative;
+    padding: 7px;
+    border: 2px solid #d9ae55;
+    border-radius: 18px;
+    background: linear-gradient(
+        135deg,
+        #f9e5a5,
+        #b8862e,
+        #fff1bd,
+        #b8862e
+    );
+    box-shadow:
+        0 0 20px rgba(255, 205, 100, 0.4),
+        0 0 55px rgba(218, 165, 65, 0.2);
+    animation: aparecer 2s ease;
+}
+
+.imagem-convite img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.frase-convite {
+    text-align: center;
+    color: #5a4100;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    padding: 22px 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px #422d00;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+    .topo-video {
+        min-height: auto;
+        padding: 25px 10px;
+    }
+
+    .imagem-convite {
+        width: 50%;
+    }
+
+    .frase-convite {
+        font-size: 17px;
+    }
+}
+
+/* TITULO */
+.titulo {
+  text-align: center;
+  margin: 60px 20px 30px;
+}
+
+.titulo h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.titulo p {
+  margin-top: 10px;
+  font-size: 1rem;
+  opacity: .8;
+}
+
+/* GRID PRESENTES */
+.presentes {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(1, 0, 61, 0.08);
+  transition: transform .4s, box-shadow .4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(10, 0, 66, 0.12);
+}
+
+/* BORDA IMAGEM */
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid rgb(0, 6, 71);
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+.card h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--verde);
+  font-size: 1.3rem;
+}
+
+.card span {
+  display: block;
+  margin: 10px 0 20px;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+/* BOTAO */
+.card button {
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background: linear-gradient(135deg, var(--verde), var(--verde-claro));
+  color: #fff;
+  transition: all .4s;
+}
+
+.card button:hover {
+  background: linear-gradient(135deg, var(--dourado), #e6c79c);
+  color: #030031;
+  transform: scale(1.05);
+}
+
+/* RODAPE */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: .9rem;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- VIDEO -->
+<section class="topo-video">
+    <div class="brilho-fundo"></div>
+
+    <div class="imagem-convite">
+        <img src="convite1.png" alt="Meus 42 anos">
+
+        <div class="frase-convite">
+            ✨ Uma noite para celebrar a vida ✨
+        </div>
+    </div>
+</section>
+
+<!-- TITULO -->
+<div class="titulo">
+  <h1>Sugestões de Presente</h1>
+  <p>Com carinho, para celebrar meus 42 anos ✨</p>
+</div>
+
+<!-- PRESENTES -->
+<section class="presentes">
+
+  <!-- PRESENTE 1 --> 
+   
+  <div class="card">
+    <img src="bolsa1.jpeg" alt="Pantufa">
+    <h2>Bolsa com alça</h2>
+    <span>R$ 59,90</span>
+    <button onclick="pix(59.90)">Presentear</button>
+  </div>
+
+  <!-- PRESENTE 2 -->
+  <div class="card">
+    <img src="azulescuro.jpeg" alt="Vestido">
+    <h2>Calça Jeans Flare Boot </h2>
+    <span>R$ 70,00</span>
+    <button onclick="pix(70)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="top1.jpeg" alt="Vestido">
+    <h2>Top Marrom Elenzga</h2>
+    <span>R$ 46,90</span>
+    <button onclick="pix(46.90)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="social1.jpeg" alt="Vestido">
+    <h2>Social Lisa / Solersun</h2>
+    <span>R$ 70,00</span>
+    <button onclick="pix(70.00)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="social2.jpeg" alt="Vestido">
+    <h2>Top casual / Verão</h2>
+    <span>R$ 37,99</span>
+    <button onclick="pix(37.99)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="saiamarrom.jpeg" alt="Vestido">
+    <h2>Saia Leve / Marrom</h2>
+    <span>R$ 40,00</span>
+    <button onclick="pix(40)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="saiajeans.jpeg" alt="Vestido">
+    <h2>Saia Jeans com Detalhes</h2>
+    <span>R$ 48,90</span>
+    <button onclick="pix(48.90)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="saiajeans2.jpeg" alt="Vestido">
+    <h2>Saia Jeans alta barra</h2>
+    <span>R$ 62,00</span>
+    <button onclick="pix(62)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="jeanscalça.jpeg" alt="Vestido">
+    <h2>Calça Jeans Flare Cinza</h2>
+    <span>R$ 75,90</span>
+    <button onclick="pix(75.90)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="calçaazul1.jpeg" alt="Vestido">
+    <h2>Calça Fleer Azul</h2>
+    <span>R$ 69,90</span>
+    <button onclick="pix(69.90)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="bolsadealça2.jpeg" alt="Vestido">
+    <h2>Bolsa Com Alça Marrom</h2>
+    <span>R$ 40,00</span>
+    <button onclick="pix(40)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="bolsa3.jpeg" alt="Vestido">
+    <h2>Bolsa Rosa Com alça</h2>
+    <span>R$ 45,99</span>
+    <button onclick="pix(45.99)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="conjuntobranco.jpeg" alt="Vestido">
+    <h2>Conjunto Branco</h2>
+    <span>R$ 60,00</span>
+    <button onclick="pix(60.00)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="conjuntoverde.jpeg" alt="Vestido">
+    <h2>Cpnjunto Verde Profundo</h2>
+    <span>R$ 80,00</span>
+    <button onclick="pix(80)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="corset.jpeg" alt="Vestido">
+    <h2>Cropped Morcego</h2>
+    <span>R$ 49,00</span>
+    <button onclick="pix(49)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="perfume1.jpeg" alt="Vestido">
+    <h2>Perfume Ilia</h2>
+    <span>R$ 110,00</span>
+    <button onclick="pix(110)">Presentear</button>
+  </div>
+
+   <div class="card">
+    <img src="perfume2.jpeg" alt="Vestido">
+    <h2>Perfume Floratta Flores</h2>
+    <span>R$ 120,00</span>
+    <button onclick="pix(120)">Presentear</button>
+  </div>
+
+   <div class="card">
+    <img src="egeo.jpg" alt="Vestido">
+    <h2>Perfume Egeo Dolce</h2>
+    <span>R$ 140,00</span>
+    <button onclick="pix(140)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="perfume3.jpeg" alt="Vestido">
+    <h2>Perfume Humor</h2>
+    <span>R$ 100,00</span>
+    <button onclick="pix(100)">Presentear</button>
+  </div>
+
+   <div class="card">
+    <img src="saiabranca.jpeg" alt="Vestido">
+    <h2>Shorts Saia Elastano</h2>
+    <span>R$ 70,00</span>
+    <button onclick="pix(70)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="saiamarrom.jpeg" alt="Vestido">
+    <h2>Saia Marrom</h2>
+    <span>R$ 40,00</span>
+    <button onclick="pix(40)">Presentear</button>
+  </div>
+
+   <div class="card">
+    <img src="saltobranco.jpeg" alt="Vestido">
+    <h2>Salto Verão</h2>
+    <span>R$ 100,00</span>
+    <button onclick="pix(100)">Presentear</button>
+  </div>
+
+   <div class="card">
+    <img src="saltopreto1.jpg" alt="Vestido">
+    <h2>Salto Preto</h2>
+    <span>R$ 100,00</span>
+    <button onclick="pix(100)">Presentear</button>
+  </div>
+
+   <div class="card">
+    <img src="vestidoazul.jpeg" alt="Vestido">
+    <h2>Vestido Azul</h2>
+    <span>R$ 64,00</span>
+    <button onclick="pix(64)">Presentear</button>
+  </div>
+
+  
+   <div class="card">
+    <img src="castanha.jpg" alt="Vestido">
+    <h2>Creme de Castanhas</h2>
+    <span>R$ 50,00</span>
+    <button onclick="pix(50)">Presentear</button>
+  </div>
+
+  
+   <div class="card">
+    <img src="creme1.jpg" alt="Vestido">
+    <h2>Hidratante Castanhas Suaves</h2>
+    <span>R$ 65,00</span>
+    <button onclick="pix(65)">Presentear</button>
+  </div>
+
+</section>
+
+<footer>
+  Obrigada por fazer parte desse momento tão especial 💚
+</footer>
+
+<script>
+const pixPorValor = {
+    59.90: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540559.905802BR5921Maria Luciana Pereira6009SAO PAULO62140510c9fi3obDJn630478F0",
+    70: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540570.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510zNYB6QVNxI63049E9C",
+    46.90: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540546.905802BR5921Maria Luciana Pereira6009SAO PAULO621405101IP1g2RpII6304C856",
+    37.99: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540537.995802BR5921Maria Luciana Pereira6009SAO PAULO62140510ppOBI3o3Zt63045419", 
+    40: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540540.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510zZ5flfZpj863043016",
+    48.90: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540548.905802BR5921Maria Luciana Pereira6009SAO PAULO62140510AlemnEkXTC63041F38",
+    62.00: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540562.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510De9mJIZIFD6304F9B0",
+    75.90: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540575.905802BR5921Maria Luciana Pereira6009SAO PAULO62140510zuDtc9SPe86304585F",
+    69.90: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540569.905802BR5921Maria Luciana Pereira6009SAO PAULO6214051017U3eQfCvG6304A04E",
+    45.99: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540545.995802BR5921Maria Luciana Pereira6009SAO PAULO621405105K4ETmhEWn63045BDC",
+    60: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540560.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510T1LW2ZF25u6304CF57",
+    80: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540580.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510JeMt5strxX6304109A",
+    49: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540549.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510oiGiDIUPHm63041637",
+    110: "00020126360014BR.GOV.BCB.PIX0114+55199884298445204000053039865406110.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510zY1oJLH0NU630451EE",
+    120: "00020126360014BR.GOV.BCB.PIX0114+55199884298445204000053039865406120.005802BR5921Maria Luciana Pereira6009SAO PAULO621405106Ek7BGgLO86304FFC9",
+    140: "00020126360014BR.GOV.BCB.PIX0114+55199884298445204000053039865406140.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510yEA48HBGWx6304E98F",
+    100: "00020126360014BR.GOV.BCB.PIX0114+55199884298445204000053039865406110.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510zY1oJLH0NU630451EE",
+    64: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540564.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510xfvTa9gYF86304C509",
+    50: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540550.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510tUKxf4BpYB6304CCB0",
+    65: "00020126360014BR.GOV.BCB.PIX0114+5519988429844520400005303986540565.005802BR5921Maria Luciana Pereira6009SAO PAULO62140510SHMoOLz49f6304342E",
+
+};
+
+function pix(valor) {
+  const codigoPix = pixPorValor[valor];
+
+  if (!codigoPix) {
+    alert("Valor indisponível no momento 💚");
+    return;
+  }
+
+  navigator.clipboard.writeText(codigoPix).then(() => {
+    alert(
+      "PIX copiado com sucesso ✨\n\n" +
+      "Abra seu banco, vá em PIX > Copia e Cola e confirme o presente 💚"
+    );
+  });
+}
+</script>
+
+
+</body>
+</html>
